@@ -45,7 +45,7 @@ public class MajotakuManager extends JavaPlugin implements Listener {
 			//設置者を取得
 			Player player =(Player)event.getPlayer();
 			if(event.getPlayer().hasPermission("majotaku.*")||player.isOp()){
-				event.setCancelled(false);
+				//event.setCancelled(false);
 			}
 			else if(event.getPlayer().hasPermission("majotaku.visitor")){
 				event.setCancelled(true);
@@ -60,7 +60,7 @@ public class MajotakuManager extends JavaPlugin implements Listener {
 			if(event.getDamager() instanceof Player){
 				Player player =(Player)event.getDamager();
 				if(player.hasPermission("majotaku.*")||player.isOp()){
-					event.setCancelled(false);
+					//event.setCancelled(false);
 				}
 				else if(player.getPlayer().hasPermission("majotaku.visitor")){
 					event.setCancelled(true);
@@ -76,7 +76,7 @@ public class MajotakuManager extends JavaPlugin implements Listener {
 		if (event.getRightClicked() instanceof ItemFrame) {
 			Player player =(Player)event.getPlayer();
 			if(player.hasPermission("majotaku.*")||player.isOp()){
-				event.setCancelled(false);
+				//event.setCancelled(false);
 			}
 			else if(player.hasPermission("majotaku.visitor")){
 				event.setCancelled(true);
@@ -90,7 +90,7 @@ public class MajotakuManager extends JavaPlugin implements Listener {
 		if (event.getEntity() instanceof ItemFrame) {
 			Player player =(Player)event.getRemover();
 			if(player.hasPermission("majotaku.*")||player.isOp()){
-				event.setCancelled(false);
+				//event.setCancelled(false);
 			}
 			else if(player.hasPermission("majotaku.visitor")){
 				event.setCancelled(true);
@@ -102,7 +102,7 @@ public class MajotakuManager extends JavaPlugin implements Listener {
 	@EventHandler
 	public void onBlockBreakEvent(BlockBreakEvent event){
 		if(event.getPlayer().hasPermission("majotaku.*")||event.getPlayer().isOp()){
-			event.setCancelled(false);
+			//event.setCancelled(false);
 		}
 		else if(event.getPlayer().hasPermission("majotaku.visitor")){
 			event.setCancelled(true);
@@ -113,7 +113,7 @@ public class MajotakuManager extends JavaPlugin implements Listener {
 	@EventHandler
 	public void onBlockDamageEvent(BlockDamageEvent event){
 		if(event.getPlayer().hasPermission("majotaku.*")||event.getPlayer().isOp()){
-			event.setCancelled(false);
+			//event.setCancelled(false);
 		}
 		else if(event.getPlayer().hasPermission("majotaku.visitor")){
 			event.setCancelled(true);
@@ -125,7 +125,7 @@ public class MajotakuManager extends JavaPlugin implements Listener {
 		Action action = event.getAction();
 		if (action == Action.LEFT_CLICK_BLOCK || action == Action.LEFT_CLICK_AIR ) {
 			if(event.getPlayer().hasPermission("majotaku.*")||event.getPlayer().isOp()){
-				event.setCancelled(false);
+				//event.setCancelled(false);
 			}
 			else if(event.getPlayer().hasPermission("majotaku.visitor")){
 				event.setCancelled(true);
@@ -137,7 +137,7 @@ public class MajotakuManager extends JavaPlugin implements Listener {
 	@EventHandler
 	public void onBlockPlaceEvent(BlockPlaceEvent event){
 		if(event.getPlayer().hasPermission("majotaku.*")||event.getPlayer().isOp()){
-			event.setCancelled(false);
+			//event.setCancelled(false);
 		}
 		else if(event.getPlayer().hasPermission("majotaku.visitor")){
 			event.setCancelled(true);
@@ -148,7 +148,7 @@ public class MajotakuManager extends JavaPlugin implements Listener {
 	@EventHandler
 	public void onPlayerBucketEmptyEvent(PlayerBucketEmptyEvent event){
 		if(event.getPlayer().hasPermission("majotaku.*")||event.getPlayer().isOp()){
-			event.setCancelled(false);
+			//event.setCancelled(false);
 		}
 		else if(event.getPlayer().hasPermission("majotaku.visitor")){
 			event.setCancelled(true);
@@ -159,7 +159,7 @@ public class MajotakuManager extends JavaPlugin implements Listener {
 	@EventHandler
 	public void onPlayerBucketFillEvent(PlayerBucketFillEvent event){
 		if(event.getPlayer().hasPermission("majotaku.*")||event.getPlayer().isOp()){
-			event.setCancelled(false);
+			//event.setCancelled(false);
 		}
 		else if(event.getPlayer().hasPermission("majotaku.visitor")){
 			event.setCancelled(true);
